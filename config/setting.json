@@ -1,0 +1,23 @@
+{
+  "companies":[
+    {
+      "cid":"1000",
+      "companyCode":"320810123",
+      "companyName":"江苏艾科维科技股份有限公司",
+      "appKey":"G2Lx2nT1",
+      "appSecret":"adb3378545b32e806fc2c16544f0f125c91182a0",
+      "appId":"d96857507254c3961f3f7cf006efb924",
+      "encryptionKey":"OHK9bqNujdYGQAgh",
+      "enterpriseId":"91320891072727823T",
+      "serverAddress":"http://112.4.175.239:8086/",
+      "gatewayId":"91320891072727823TWG001",
+      "socketIp":"112.4.175.239",
+      "socketPort":"8087",
+      "secretKey":"OHK9bqNujdYGQAgh",
+      "offset":"OHK9bqNujdYGQAgh",
+      "adpServerIp":"10.54.4.21",
+      "adpServerPort":"8080",
+      "bitchSize":"1"
+    }
+  ]
+}
