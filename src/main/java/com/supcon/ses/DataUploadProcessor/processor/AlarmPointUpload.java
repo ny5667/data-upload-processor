@@ -33,7 +33,7 @@ public class AlarmPointUpload {
 
     private static final Logger log = LoggerFactory.getLogger(AlarmPointUpload.class);
 
-    private final List<String> ignoreColumnList = Arrays.asList("BIZ_ID", "TAG_NAME", "TAG_VALUE", "VALID"); // 忽略的列名列表
+    private final List<String> ignoreColumnList = Arrays.asList("BIZ_ID", "TAG_NAME", "TAG_VALUE", "VALID","CID","ALARM_NAME"); // 忽略的列名列表
 
     private SimpleDateFormat mySimpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 
@@ -167,17 +167,14 @@ public class AlarmPointUpload {
         try {
             //发送报文
             Socket socket = new Socket(socketIp, Integer.parseInt(socketPort));
-            StringBuilder stringBuilder = getStringBuilder(socket, sendJson);
-            log.error("发送返回报文.");
-            String string = stringBuilder.toString();
-            log.error(string);
+            getStringBuilder(socket, sendJson);
         } catch (Exception e) {
             log.error("报警消息发送失败", e);
         }
 
     }
 
-    private static StringBuilder getStringBuilder(Socket socket, String sendJson) throws IOException {
+    private static void getStringBuilder(Socket socket, String sendJson) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
         bufferedWriter.write(sendJson);
         bufferedWriter.write("@@");
@@ -185,12 +182,13 @@ public class AlarmPointUpload {
 
         // 接收报文
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
+
         StringBuilder stringBuilder = new StringBuilder();
-        char[] buffer = new char[1024];
-        int readChars;
-        readChars = bufferedReader.read(buffer);
-        stringBuilder.append(buffer, 0, readChars);
-        return stringBuilder;
+        String line = "";
+        while((line = bufferedReader.readLine()) != null) {
+            stringBuilder.append(line);
+        }
+        log.error(">>>>发送返回报文 {}", stringBuilder);
     }
 
 
