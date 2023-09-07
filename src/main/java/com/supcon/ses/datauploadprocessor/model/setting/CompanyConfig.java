@@ -1,6 +1,6 @@
-package com.supcon.ses.DataUploadProcessor.model.setting;
+package com.supcon.ses.datauploadprocessor.model.setting;
 
-import com.supcon.ses.DataUploadProcessor.constant.DefaultSettingConstant;
+import com.supcon.ses.datauploadprocessor.constant.DefaultSettingConstant;
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 

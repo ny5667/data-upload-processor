@@ -1,4 +1,4 @@
-package com.supcon.ses.DataUploadProcessor.model.pojo;
+package com.supcon.ses.datauploadprocessor.model.pojo;
 
 import lombok.Data;
 

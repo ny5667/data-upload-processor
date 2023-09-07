@@ -1,4 +1,4 @@
-package com.supcon.ses.DataUploadProcessor.utils;
+package com.supcon.ses.datauploadprocessor.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;

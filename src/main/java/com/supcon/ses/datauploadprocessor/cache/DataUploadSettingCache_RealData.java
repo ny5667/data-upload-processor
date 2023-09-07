@@ -1,6 +1,6 @@
-package com.supcon.ses.DataUploadProcessor.cache;
+package com.supcon.ses.datauploadprocessor.cache;
 
-import com.supcon.ses.DataUploadProcessor.model.setting.CompanyConfig;
+import com.supcon.ses.datauploadprocessor.model.setting.CompanyConfig;
 
 import java.util.List;
 

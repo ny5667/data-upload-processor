@@ -1,4 +1,4 @@
-package com.supcon.ses.DataUploadProcessor;
+package com.supcon.ses.datauploadprocessor;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

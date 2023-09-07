@@ -1,4 +1,4 @@
-package com.supcon.ses.DataUploadProcessor.model.setting;
+package com.supcon.ses.datauploadprocessor.model.setting;
 
 import lombok.Data;
 

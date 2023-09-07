@@ -1,4 +1,4 @@
-package com.supcon.ses.DataUploadProcessor.constant;
+package com.supcon.ses.datauploadprocessor.constant;
 
 public class DefaultSettingConstant {
 

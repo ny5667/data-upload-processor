@@ -1,6 +1,6 @@
-package com.supcon.ses.DataUploadProcessor.repository;
+package com.supcon.ses.datauploadprocessor.repository;
 
-import com.supcon.ses.DataUploadProcessor.model.pojo.AlarmPoint;
+import com.supcon.ses.datauploadprocessor.model.pojo.AlarmPoint;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;

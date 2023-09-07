@@ -1,9 +1,9 @@
-package com.supcon.ses.DataUploadProcessor;
+package com.supcon.ses.datauploadprocessor;
 
-import com.supcon.ses.DataUploadProcessor.cache.DataUploadSettingCache_RealData;
-import com.supcon.ses.DataUploadProcessor.utils.FileHelper;
-import com.supcon.ses.DataUploadProcessor.utils.JsonHelper;
-import com.supcon.ses.DataUploadProcessor.model.setting.SettingRealData;
+import com.supcon.ses.datauploadprocessor.cache.DataUploadSettingCache_RealData;
+import com.supcon.ses.datauploadprocessor.utils.FileHelper;
+import com.supcon.ses.datauploadprocessor.utils.JsonHelper;
+import com.supcon.ses.datauploadprocessor.model.setting.SettingRealData;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

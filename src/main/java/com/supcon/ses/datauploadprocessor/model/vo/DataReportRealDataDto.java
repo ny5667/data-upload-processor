@@ -1,4 +1,4 @@
-package com.supcon.ses.DataUploadProcessor.model.vo;
+package com.supcon.ses.datauploadprocessor.model.vo;
 
 import lombok.Data;
 

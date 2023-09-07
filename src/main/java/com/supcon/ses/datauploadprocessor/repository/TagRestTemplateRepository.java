@@ -1,11 +1,11 @@
-package com.supcon.ses.DataUploadProcessor.repository;
+package com.supcon.ses.datauploadprocessor.repository;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.supcon.ses.DataUploadProcessor.model.vo.ResultVO;
-import com.supcon.ses.DataUploadProcessor.model.vo.TagVo;
-import com.supcon.ses.DataUploadProcessor.utils.RestTemplateUtils;
+import com.supcon.ses.datauploadprocessor.model.vo.ResultVO;
+import com.supcon.ses.datauploadprocessor.model.vo.TagVo;
+import com.supcon.ses.datauploadprocessor.utils.RestTemplateUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;

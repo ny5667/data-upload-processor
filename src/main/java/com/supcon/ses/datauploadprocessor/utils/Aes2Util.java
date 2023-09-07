@@ -1,4 +1,4 @@
-package com.supcon.ses.DataUploadProcessor.utils;
+package com.supcon.ses.datauploadprocessor.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
